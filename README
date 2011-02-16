@@ -1,0 +1,12 @@
+This is the Cairo Desk Pane project, by Francis Whittle.
+
+It's a desktop window divided into resizable panes into which you can put stuff,
+currently limited to terminals (provided by libvte).  In the future more options
+will be available via a plug-in system.
+
+Dependencies:
+Gtk+-3.0
+VTE-2.90
+
+Compile with
+gcc -o cairodeskpane $(pkg-config --libs --cflags gtk+-3.0 vte-2.90) *.c
